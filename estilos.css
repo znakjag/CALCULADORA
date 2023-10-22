@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    background-color: black; /* <script defer src ="https://app.embed.im/snow.js"></script> (PARA QUE APAREZCA NIEVE)*/
+    display:grid;
+    place-items: center;
+}
+.calculadora{
+    background-color:#eff313f3;
+    color:white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem; /* lo que ocupara la calculadora*/
+    border-radius: 1rem; /*borde la calculadora*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem; /* separar los botones*/
+}
+.pantalla{
+    grid-column: 1/-1;/*el anchor de la pantalla*/
+    background-color:#090c31;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+.btn{ /*clase para el teclado*/
+    background-color: #151733;
+    color:white;
+    border:0;
+    padding: 1.5rem .4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor:pointer;
+}
+.btn:hover{  /*al colocar el cursor */
+    background-color: #090c31 ;
+}
+#cero{
+    grid-column: span 2;/*para que ocupe el espacio de 2 botones hacia el lado*/
+    background-color: red;
+}
+#cero:hover{
+    background-color: rgb(216, 6, 6);
+}
+#igual{
+    grid-row: span 2;/*para que ocupe el espacio de 2 botones hacia abajo*/
+    background-color: red;
+}
+#igual:hover{
+    background-color: rgb(216, 6, 6);
+}
+#c{
+    background-color: red;    
+}
+#c:hover{
+    background-color: rgb(216, 6, 6);
+}
